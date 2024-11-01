@@ -1,0 +1,102 @@
+<style>
+    /* Adjust margins for the block container */
+    .block-container {
+        margin-top: 32px !important;
+        margin-right: 5px !important;
+        margin-bottom: 0px !important;
+        margin-left: 0px !important;
+        padding: 0 !important;
+    }
+
+    /* Make the main layout full-width */
+    .main {
+        max-width: 100% !important;
+        margin: 0px auto !important;  /* Center content horizontally */
+    }
+            
+    iframe {height: 762px !important; overflow: hidden;}
+    
+    .stButton button {
+        background-color: transparent;
+        border: none; 
+        font-size: 10px;
+    }
+    
+    .top-block {
+        background-color: #0fa3b1;
+        padding: 5px;
+        margin-top: 0.2em;
+        margin-bottom: 0;
+        border-radius: 5px 5px 0 0;
+        height: 20px; 
+        width: 100%;
+    }
+    
+    
+    div[data-testid="stVerticalBlockBorderWrapper"]:has(.stHtml > .watchlist_card) {
+        border-width: 0.1em;
+        padding-bottom: 0em;
+    }
+    
+
+    div[data-testid="stVerticalBlock"]:has(> div > .stHtml > .watchlist_symbol_name) {
+        & p {
+            color: #ecf39e;
+            font-family: "Open Sans", sans-serif;
+            font-size: 1em;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+    }
+
+    div[data-testid="stVerticalBlock"]:has(> div > .stHtml > .watchlist_price_label) {
+        & p {
+            font-size: 0.8em;
+            margin-bottom: 0;
+        }
+    }
+
+    div[data-testid="stVerticalBlock"]:has(> div > .stHtml > .watchlist_price_value) {
+        & p {
+            color: #ecf39e;
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.2em;
+            margin-bottom: 0;
+        }
+    }
+    
+
+    div[data-testid="stVerticalBlock"]:has(> div > .stHtml > .column_plotly) {
+        & .stPlotlyChart {
+            margin-top: 3em;
+            padding: 1em;
+            border-radius: 16px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    div[data-testid="stMetric"] {
+        background-color: #393939;
+        text-align: center;
+        padding: 1em 1.3em;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    }
+
+    label[data-testid="stMetricLabel"]{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+    }
+
+    div[data-testid="stMetricValue"] {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    div[data-testid="stVerticalBlock"]:has(> div > .stHtml > .bottom_indicator) {
+        margin-top: 0.5em;
+    }
+
+</style>

@@ -1,0 +1,55 @@
+/* Adjust the title font size in the toolbar */
+ .fc-toolbar-title {
+     font-size: 1rem; /* Smaller title font */
+     font-weight: bold;
+ }
+ 
+ /* Customize the navigation buttons in the toolbar */
+ .fc-button {
+     font-size: 0.8rem; /* Smaller font for buttons */
+ }
+ 
+ /* Calendar cells - make day numbers and overall cell smaller */
+ .fc-daygrid-day-number {
+     font-size: 0.7rem; /* Smaller font for day numbers */
+ }
+
+ /* Make grid cells smaller by reducing padding and setting fixed size */
+ .fc-daygrid-day {
+     padding: 0px !important; /* Minimal padding for each date cell */
+     height: 25px !important; /* Smaller height for grid cells */
+     width: 25px !important; /* Smaller width for grid cells */
+ }
+ 
+ /* Compact grid layout by reducing day cell content size */
+ .fc-daygrid-day-frame {
+     padding-top: 2px !important; /* Reduce padding inside date cells */
+ }
+
+ /* Adjust font size for weekday names (Mon, Tue, etc.) */
+ .fc-col-header-cell {
+     font-size: 0.75rem; /* Smaller font for weekdays */
+     padding: 0px !important; /* Reduce padding for smaller look */
+ }
+
+ /* Adjust height for events section within each day cell */
+ .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+     min-height: 0em !important; /* Reduce the minimum height */
+     position: relative; /* Ensure proper positioning within cells */
+ }
+ 
+ /* Apply hover effect to all date cells*/
+ .fc-daygrid-day:hover {
+    background-color: #FFD700 !important; /* Highlight color on hover */
+    color: black !important; /* Text color change */
+    font-weight: bold !important; /* Bold text */
+    cursor: pointer;
+}
+
+
+ /* Restrict max height and width of the entire calendar grid */
+ .fc-scroller-harness {
+     max-height: 300px; /* Smaller max height */
+     max-width: 300px; /* Smaller max width */
+ }
+

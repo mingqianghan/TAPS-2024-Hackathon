@@ -1,0 +1,82 @@
+<style>
+    /* Adjust margins for the block container */
+    .block-container {
+        margin-top: 30px !important;
+        margin-right: 0px !important;
+        margin-bottom: 0px !important;
+        margin-left: 20px !important;
+        padding: 0 !important;
+    }
+
+    /* Optional: Make the main layout full-width */
+    .main {
+        max-width: 100% !important;
+        margin: 0 auto !important;  /* Center content horizontally */
+    }
+    
+     div[data-testid="stVerticalBlock"]:has(> div > .stHtml > .column_plotly) {
+         & .stPlotlyChart {
+             margin-top: 0.2em;
+             padding: 0em;
+             border-radius: 20px;
+             box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+         }
+     }
+     
+    div[data-testid="stMetric"] {
+        background-color: #393939;
+        text-align: center;
+        padding: 1em 1.3em;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    }
+
+    label[data-testid="stMetricLabel"]{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+    }
+
+    div[data-testid="stMetricValue"] {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    div[data-testid="stMetricDelta"] svg {
+        display: none;
+    }
+
+    div[data-testid="stVerticalBlock"]:has(> div > .stHtml > .low_indicator) {
+        & div[data-testid="stMetric"] {
+            border-left: 0.5rem solid #ecf39e;
+            margin-top: 0em;
+        }
+    }
+
+    div[data-testid="stVerticalBlock"]:has(> div > .stHtml > .high_indicator) {
+        & div[data-testid="stMetric"] {
+            border-left: 0.5rem solid #f86624;
+            margin-top: 0em;
+        }
+    }
+
+    div[data-testid="stVerticalBlock"]:has(> div > .stHtml > .bottom_indicator) {
+        margin-top: 0.5em;
+    }
+    
+    /* Style for optimal, deficit */
+    .optimal {
+        color: #affc41; /* green */
+    }
+    .deficit {
+        color: #ff4c4c; /* red */
+    }
+    
+    .unique-metric {
+        margin-bottom: 0.8em;
+    }
+
+</style>
+
+
