@@ -52,7 +52,7 @@ def create_irrigation_prompt(date, plot_id, water_required,
 
 
 
-#
+OPENAI_API_KEY2 = "sk-3dwNsDNGKin3tNf5UA_IX2Vgc_RR0shmhJpbNt5IhWT3BlbkFJQ0qXwsUAg7OYHXQi35fip1t3b21K2koeQnAjD9KtYA"
 
 client = OpenAI(api_key= OPENAI_API_KEY2)
 
